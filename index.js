@@ -19,10 +19,10 @@ contactDiv.append(avatarTag, nameTag, phoneTag, btn)
 contactslist.append(contactDiv)
 btn.classList.add("contact__btn")
 const brnDone = document.querySelector(".form__btn")
-brnDone.onclick = () => {
-    if (avatarTag, nameTag, phoneTag !== "") {
-        append(contactslist)
+btn.onclick = () => {
+    if (brnDone.contains(btn)) {
+       contactDiv.append(contactslist)
     } else {
-        alert('Error')
+        btn.append(contactDiv)
     }
 }
